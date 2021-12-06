@@ -11,12 +11,10 @@ const AboutPage: React.FunctionComponent<IPage & RouteComponentProps<any>> = pro
 
         let number = props.match.params.number;
 
-        if (number)
-        {
-            setMessage(`The Number is ${number}`);
+        if (number) {
+            setMessage(`The Number selected is ${number}`);
         }
-        else
-        {
+        else {
             setMessage(`No number provided!`);
         }
     }, [props])
